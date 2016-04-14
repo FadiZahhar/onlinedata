@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="map-container">
+    <!-- navigation that will be generated using unordered list -->
+		<ul>
+			<li><a href="#middle-east">middle east</a></li>
+			<li><a href="#north-africa">north africa</a></li>
+			<li><a href="#europ">europ</a></li>
+			<li><a href="#asia">asia</a></li>
+			<li><a href="#australia">australia</a></li>
+			<li><a href="#north-america">north america</a></li>
+		</ul>
+      <!-- the google map that will be generated -->
+  		<div id="map-canvas"></div>
+  		<!-- details that will be loaded using ajax methods -->
+      <div id="map-details">
+        <div class="preloader">
+        <img src="assets/preloaders/preloader.gif">
+        </div>
+      </div>
+
+  	</div>
+    <!-- loading jquery library -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   <!-- loading the google map api, should be replaced with a key in the production -->
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <!-- 
+      based on gmaps library check the documentation for more details 
+      https://hpneo.github.io/gmaps/
+    -->
+    <script src="assets/js/gmaps.js"></script>
+
+    <!-- Custom script for arabbank gmap-module -->
+    <script src="assets/js/gmap-countries.js"></script>
+    <script src="assets/js/gmap-module.js"></script>
+    <script src="assets/js/gmap-events.js"></script>
+    <script src="assets/js/gmap-routes.js"></script>
+    <script src="assets/js/gmap-init.js"></script>
+</body>
+
+</html>
